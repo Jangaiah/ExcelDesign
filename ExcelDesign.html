@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul{
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+}
+ul li{
+width:100px;height:20px;border:0.5px solid #cec4c4;padding:1px;
+float:left;
+}
+
+ul li input{width:99px;}
+
+.highlight{
+border: 2px solid green;
+padding:0px
+}
+
+.clear{
+clear:both;
+}
+</style>
+<title>Page Title</title>
+</head>
+<body>
+<ul type="none"><li><input type="text" /></li><li><input type="text" /></li><li><input type="text" /></li></ul><div class="clear"></div>
+<ul type="none"><li><input type="text" /></li><li><input type="text" /></li><li><input type="text" /></li></ul><div class="clear"></div>
+<ul type="none"><li><input type="text" /></li><li><input type="text" /></li><li><input type="text" /></li></ul><div class="clear"></div>
+<ul type="none"><li><input type="text" /></li><li><input type="text" /></li><li><input type="text" /></li></ul><div class="clear"></div>
+<ul type="none"><li><input type="text" /></li><li><input type="text" /></li><li><input type="text" /></li></ul><div class="clear"></div>
+<ul type="none"><li><input type="text" /></li><li><input type="text" /></li><li><input type="text" /></li></ul><div class="clear"></div>
+<script>
+document.addEventListener("click",function(e){
+var lis=document.getElementsByTagName("li");
+for(x in lis) lis[x].className="";
+if(e.target.tagName=='LI')
+  e.target.className="highlight";
+});
+</script>
+</body>
+</html>
+
